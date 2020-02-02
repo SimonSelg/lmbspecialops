@@ -86,6 +86,6 @@ target_link_libraries( lmbspecialops
         ${lz4_STATIC_LIB}
         ${webp_LIBRARY}
 )
-if( TENSORFLOW_FRAMEWORK_LIB )
-    target_link_libraries( lmbspecialops ${TENSORFLOW_FRAMEWORK_LIB} )
+if( TENSORFLOW_LINK_FLAGS )
+    target_link_libraries( lmbspecialops ${TENSORFLOW_LINK_FLAGS} )
 endif()
